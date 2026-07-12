@@ -15,3 +15,9 @@ git clone https://github.com/Aqsa-Farooq24/Capstone-Project.git
 - Add project features
 - Improve documentation
 - Build the complete capstone project
+
+## Prerequisites
+
+- Install [Git](https://git-scm.com/downloads)
+- Install [Node.js](https://nodejs.org/) (v18+ recommended)
+- Install [npm](https://www.npmjs.com/) (comes with Node.js)
