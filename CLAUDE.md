@@ -50,3 +50,19 @@ Capstone Project
 
 \- Avoid unnecessary complexity.
 
+
+
+\## Project Rules
+
+
+
+1\. Use only HTML, CSS, and vanilla JavaScript unless another framework is explicitly required.
+
+2\. Every form input must have a proper label and client-side validation.
+
+3\. Review AI-generated code before committing and manually test validation and accessibility.
+
+4\. Keep HTML, CSS, and JavaScript in separate files.
+
+5\. Use meaningful IDs and consistent file naming.
+
