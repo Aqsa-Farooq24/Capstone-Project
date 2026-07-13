@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <main class="settings-page">
+    <header class="settings-header">
+      <h1>Settings</h1>
+      <p>Update your profile and appearance preferences.</p>
+    </header>
+
+    <!-- novalidate disables browser defaults so our JS validation runs consistently -->
+    <form id="settings-form" class="settings-form" novalidate>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          autocomplete="username"
+          aria-describedby="username-error"
+          aria-invalid="false"
+        >
+        <span class="field-error" id="username-error" role="alert"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          autocomplete="email"
+          aria-describedby="email-error"
+          aria-invalid="false"
+        >
+        <span class="field-error" id="email-error" role="alert"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="theme">Theme</label>
+        <select id="theme" name="theme">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </form>
+
+    <div id="status-message" class="status-message" role="status" aria-live="polite" hidden></div>
+  </main>
+
+  <script src="settings.js"></script>
+</body>
+</html>
